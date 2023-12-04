@@ -1,0 +1,58 @@
+@import "../../styles/global-imports";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  position: relative;
+  transform: translateY(10%);
+  
+  @include onDesktop {
+    transform: translateY(70%);
+    margin-top: 80px !important;
+  }
+  
+  @include onTablet {
+    gap: 24px;
+    transform: translateY(-16%);
+  }
+
+  &__top {
+    max-width: 280px;
+    text-align: start;
+    position: relative;
+    
+    @include onMobile {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    
+    @include onDesktop {
+      max-width: 290px;
+      left: -148%;
+      top: -50px;
+    }
+    
+    @include onTablet {
+      left: -50%;
+      transform: translateY(100px);
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 288px;
+    height: 56px;
+    
+    @include onTablet {
+      width: 328px;
+    }
+
+    @include onDesktop {
+      position: absolute;
+      left: -156%;
+      top: 200px;
+    }
+  }
+}

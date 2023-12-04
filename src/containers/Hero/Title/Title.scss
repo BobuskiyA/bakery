@@ -1,0 +1,47 @@
+@import '../../../styles/global-imports';
+
+.title {
+  color: $c-primary;
+  
+  &--for-desktop {
+    display: none;
+    
+    @include onTabletAndDesktop {
+      min-width: max-content;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+    }
+    
+    @include onTablet {
+      font-size: 10vw;
+      top: 50%;
+      left: 50%;
+    }
+
+    @include onDesktop {
+      top: 200%;
+    }
+
+    
+  }
+  
+  &__slider {
+    display: flex;
+    gap: 20px;
+    
+    @include onTabletAndDesktop {
+      display: none;
+    }
+
+    &-title {
+      min-width: max-content;
+      font-size: 100px;
+    }
+  }
+}
+
+.scroll-char {
+  margin-right: 40px;
+}

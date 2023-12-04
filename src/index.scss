@@ -1,0 +1,43 @@
+@import "./styles/global-imports";
+
+.body {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $c-light-pink;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $c-primary;
+    border-radius: 6px;
+    padding-right: 2px;
+  }
+
+  &-with-menu {
+    overflow: hidden;
+  }  
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

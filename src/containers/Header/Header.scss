@@ -1,0 +1,21 @@
+@import "../../styles/global-imports";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+
+  &__menu {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+}

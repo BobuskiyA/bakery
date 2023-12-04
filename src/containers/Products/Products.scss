@@ -1,0 +1,41 @@
+@import "../../styles/global-imports";
+
+.products {
+  margin-top: 304px;
+  
+  width: 100%;
+  
+  position: relative;
+  
+  @include onDesktop {
+    margin-top: 554px;
+  }
+
+  @include onTablet {
+    margin-top: 80px;
+  }
+  
+  &__top {
+    position: relative;
+    padding-top: 16px;
+
+    background-color: $c-light-pink;
+
+    @include onTablet {
+      text-align: left;
+
+      margin-bottom: 64px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text-mask {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    margin-right: 4px;
+  }
+}

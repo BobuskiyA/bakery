@@ -1,0 +1,73 @@
+@import "../../../styles/global-imports";
+
+.menu {
+  &__content--top {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  &__open,
+  &__close {
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+    background: none;
+    border: none;
+
+  }
+
+  &__open {
+    background: url("../../../images/icons/burger-menu.svg") center no-repeat;
+  }
+
+  &__close {
+    background: url("../../../images/icons/icon-close.svg") center no-repeat;
+  }
+
+  &__content {
+    background-color: $c-light-pink;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    opacity: 0;
+
+    animation: fadeIn 0.3s forwards;
+
+    &.isActive {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 30px;
+  }
+
+  &__link {
+    @include hoverForLinks($c-primary);
+  }
+}

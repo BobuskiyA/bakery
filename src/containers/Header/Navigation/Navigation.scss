@@ -1,0 +1,12 @@
+@import "../../../styles/global-imports";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+
+  &__link {
+    color: $c-black;
+    text-transform: capitalize;
+  }
+}

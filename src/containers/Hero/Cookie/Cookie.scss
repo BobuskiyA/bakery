@@ -1,0 +1,29 @@
+@import "../../../styles/global-imports";
+
+.cookie {
+  display: block;
+  position: relative;
+  width: 90vw;
+  height: 90vw;
+  min-height: 280px;
+
+  background: url("../../../images/cookie.png") no-repeat center;
+  background-size: cover;
+
+  z-index: 0;
+
+  @include onTabletAndDesktop {
+    width: 44vw;
+    height: 36vw;
+  }
+
+  @include onDesktop {
+    position: absolute;
+    top: 216%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 634px;
+    max-height: 518px;
+  }
+}

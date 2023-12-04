@@ -1,0 +1,10 @@
+@import "../utils/mixins";
+
+.container {
+  margin: 0 auto;
+  max-width: 1248px;
+
+  @include onMobileAndTablet {
+    max-width: 90vw;
+  }
+}

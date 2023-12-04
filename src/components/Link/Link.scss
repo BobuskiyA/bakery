@@ -1,0 +1,38 @@
+@import "../../styles/global-imports";
+
+.link {
+  @extend %uppercase;
+  color: $c-primary;
+  
+  &--without-border {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    max-width: min-content;
+    white-space: nowrap;
+    position: relative;
+    @include hoverForLinks($c-primary);
+    
+    transition: all 0.2s cubic-bezier(0.38, 1.12, 0.81, 0.6);
+
+    &-arrow {
+      &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url("../../images/icons/arrow.svg") no-repeat center;
+      }
+    }
+
+    &-phone {
+      &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url("../../images/icons/phone.svg") no-repeat center;
+      }
+    }
+  }
+}

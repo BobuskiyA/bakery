@@ -1,0 +1,17 @@
+@import "./mixins";
+
+.grid {
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 36px;
+  }
+  
+  @include onDesktop {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

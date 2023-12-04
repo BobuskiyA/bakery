@@ -1,0 +1,10 @@
+@import "../../styles/global-imports";
+
+.socials {
+  display: flex;
+  gap: 32px;
+
+  &__link {
+    padding: 6px;
+  }
+}

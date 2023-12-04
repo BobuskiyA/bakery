@@ -1,0 +1,34 @@
+@import "../../styles/global-imports";
+
+.about-us {
+  position: relative;
+  top: -240px;
+
+  background: url("../../images/about-us-bg.png") no-repeat center;
+  
+  @include onTabletAndDesktop {
+    padding-bottom: 332px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include onTabletAndDesktop {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+
+  &__title {
+
+    @include onTablet {
+      min-width: 330px;
+    }
+
+    @include onDesktop {
+      min-width: 435px;
+    }
+  }
+}

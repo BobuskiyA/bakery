@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "photoLink": "oats-cakes",
+    "title": "Cakes",
+    "content": "Oatmeal cookies with golden raisins, orange zest and chocolate chips"
+  },
+  {
+    "id": 2,
+    "photoLink": "chocolate-cakes",
+    "title": "Cakes",
+    "content": "Chocolate biscuit coffee cake topped with a buttercream and powder"
+  },
+  {
+    "id": 3,
+    "photoLink": "donuts-multi-layered",
+    "title": "Donuts",
+    "content": "Light multi-layered croissant strewn with cinammon and almond “petals”"
+  },
+  {
+    "id": 4,
+    "photoLink": "donuts-coconut",
+    "title": "Cakes",
+    "content": "Light multi-layered croissant strewn with coconut and nuts"
+  },
+  {
+    "id": 5,
+    "photoLink": "cakes-caramel",
+    "title": "Cakes",
+    "content": "Chocolate salted caramel, Vanilla frutti pebbles"
+  },
+  {
+    "id": 6,
+    "photoLink": "oats-cookies",
+    "title": "Cookies",
+    "content": "Oatmeal cookies with golden raisins, orange zest and chocolate chips"
+  }
+]
